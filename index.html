@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js ui-mobile-rendering" lang="en">
+<head>
+      <title>Daawat</title>
+      <meta name="description" content="">
+<link rel="shortcut icon" href="images/logo.jpg">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" />
+      <script src="js/libs/require.js" data-main="js/mobile"></script>
+      <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+      </script>
+</head>
+<body onLoad="MM_preloadImages('images/logo.jpg')">
+
+<div data-role="page" data-theme="a" id="demo-page" class="my-page">
+  
+      <div data-role="header">
+            <h1>DAAWAT</h1>
+           
+      </div><!-- /header -->
+  
+      <div data-role="content" style="min-height:430px;">
+            <h2 style="color:#CE0000">Dear people, thank you for coming.</h2>
+<p style="color:#CE0000">The host will take your order shortly.</p>
+<center> 
+  <a href="#aboutus" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Daawat','','images/logo.jpg',1)"><img src="images/chicken_curry.jpg" alt="Welcome all" name="Daawat" width="300" height="200" border="0" style="border-radius:5px"></a> </center>
+<ul data-role="listview" data-ajax="false" data-inset="true" data-theme="d">
+    <li data-role="list-divider"></li>
+    <li><a href="#aboutus">Aboutus</a></li>
+    <li><a href="#gallary">Gallary</a></li>
+    <li><a href="#category">Our Menu</a></li>
+    <li><a href="#order">Home Delivery</a></li>
+     <li><a href="contactus.html">Contact</a></li>
+</ul>
+</div>
+ <div data-role="footer" data-theme="none">
+ <center>   <p style="color:#999"> <b>  2013 @Dawat Kitchen <br>Designed By IT Genesys</b> </p></center>
+
+    </div>
+</div>
+<div data-role="page" data-theme="a" id="aboutus" class="my-page">
+  
+      <div data-role="header">
+            <h1>Aboutus</h1>
+            <a href="#" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+      </div><!-- /header -->
+  
+      <div data-role="content" style="min-height:430px;">
+            <p><i>"We Keep in mind about your health..."</i></p>
+<center> 
+  <div align="right" style="width:200px;height:80px;background-image:url(images/apple.jpg);color:#F00;border:1px;padding:20px"></div>    
+    <div style="width:400px;height:200px;color:#F00;border:1px;padding:20px;text-align:justify">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</div>
+</center>
+</div>
+ <div data-role="footer" data-theme="none">
+ <center>   <p style="color:#999"> <b>  2013 @Dawat Kitchen <br>Designed By IT Genesys</b> </p></center>
+
+    </div>
+</div>
+<!-- Underscore Template that is used to display all of the Category Models -->
+<div id="category" data-role="page" data-title="Daawat">
+  
+      <div data-role="header">
+            <h1>Our Menu</h1>
+            <a href="#" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+      </div><!-- /header -->
+  
+      <div data-role="content">
+      
+        <center><img src="images/deli.jpg" width="280px" height="150px" style="border-radius:5px" ></center>
+            <h4>Please Select Your Category Of Interest:</h4>
+            
+            <ul data-role="listview" data-inset="true">
+                  <li><a href="#category?animals" class="animals">Vegitarian</a></li>
+                  <li><a href="#category?colors" class="colors">Non-Vegitarian</a></li>
+                  
+            </ul>
+          
+      </div><!-- /content -->
+
+</div>
+
+<div id="animals" data-role="page" data-title="Daawat">
+
+      <div data-role="header">
+	    <h1>Vegitarian Dishes</h1>
+         <a href="#category" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+      </div><!-- /header -->
+  
+      <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+            </ul>
+   
+      </div><!-- /content -->
+      <div data-role="footer" data-theme="none">
+ <center>   <p style="color:#999"> <b>  2013 @Dawat Kitchen <br>Designed By IT Genesys</b> </p></center>
+
+    </div>
+</div>
+
+<div id="colors" data-role="page" data-title="Daawat">
+
+      <div data-role="header">
+	    <h1>Non-Vegitarian Dishes</h1>
+         <a href="#category" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+      </div><!-- /header -->
+
+      <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+            </ul>
+      </div><!-- /content -->
+ <div data-role="footer" data-theme="none">
+ <center>   <p style="color:#999"> <b>  2013 @Dawat Kitchen <br>Designed By IT Genesys</b> </p></center>
+
+    </div>
+</div>
+<script id="categoryItems" type="text/template">
+
+      <% _.each( collection.toJSON(), function( category, id ) { %>
+
+            <li class="ui-li ui-li-static ui-btn-up-c ui-corner-top">
+                  <%= category.type %>
+            </li>
+
+      <% }); %>
+
+</script>
+<!-- /gallary -->
+<script>
+		$( document ).on( "pageinit", "#gallary", function() {
+
+			$( ".cars" ).on( "click", function() {
+				var target = $( this ),
+					brand = target.find( "h2" ).html(),
+					model = target.find( "p" ).html(),
+					
+					short = target.attr( "id" ),
+					closebtn = '<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-btn-right">Close</a>',
+					header = '<div data-role="header"><h2>' + brand +  '</h2></div>',
+					img='<div data-role="header"><h2>Lorem oseun</h2></div>',
+					para='<div><center><p>'+ model +'</p></center></div>',
+					popup = '<div data-role="popup" id="popup-' + short + '" data-short="' + short +'" data-theme="none" data-overlay-theme="a" data-corners="false" data-tolerance="15">' + closebtn + header  + para + img+'</div>';
+
+				// Create the popup. Trigger "pagecreate" instead of "create" because currently the framework doesn't bind the enhancement of toolbars to the "create" event (js/widgets/page.sections.js).
+				$.mobile.activePage.append( popup ).trigger( "pagecreate" );
+				// Wait with opening the popup until the popup image has been loaded in the DOM.
+				// This ensures the popup gets the correct size and position
+				$( ".photo", "#popup-" + short ).load(function() {
+					var height = $( this ).height(),
+						width = $( this ).width();
+					// Set height and width attribute of the image
+					$( this ).attr({ "height": height, "width": width });
+					// Open the popup
+					$( "#popup-" + short ).popup( "open" );
+					// Clear the fallback
+					clearTimeout( fallback );
+				});
+				// Fallback in case the browser doesn't fire a load event
+				var fallback = setTimeout(function() {
+					$( "#popup-" + short ).popup( "open" );
+				}, 2000);
+			});
+
+			// Set a max-height to make large images shrink to fit the screen.
+			$( document ).on( "popupbeforeposition", ".ui-popup", function() {
+				// 68px: 2 * 15px for top/bottom tolerance, 38px for the header.
+				var maxHeight = $( window ).height() - 68 + "px";
+
+				$( "img.photo", this ).css( "max-height", maxHeight );
+			});
+
+			// Remove the popup after it has been closed to manage DOM size
+			$( document ).on( "popupafterclose", ".ui-popup", function() {
+				$( this ).remove();
+			});
+		});
+	</script>
+    <link rel="stylesheet" href="grid-listview.css">
+    <div data-role="page" data-theme="a" id="gallary" class="my-page">
+
+	<div data-role="header">
+		<h1>Gallary</h1>
+		<a href="#" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+       
+	</div><!-- /header -->
+	
+	<div data-role="content">
+	
+        <ul data-role="listview" data-inset="true">
+        	<li><a href="#" class="cars" id="1">
+            	<img src="_assets/img/1.jpg">
+            	<h2>Tandoori Chicken</h2>
+               
+                                <p >Desription</p>
+                <span style="font-size:12px" class="ui-li-aside">Special</span>
+            </a></li>
+        	<li><a href="#" class="cars" id="2">
+            	<img src="_assets/img/2.jpg">
+            	<h2>Chicken Lajawab</h2>
+                <p>Desription</p>
+                <span style="font-size:12px" class="ui-li-aside">New</span>
+            </a></li>
+        	<li><a href="#" class="cars" id="3">
+            	<img src="_assets/img/3.jpg">
+            	<h2>Butter Chicken</h2>
+                <p>Desription</p>
+                <span style="font-size:12px" class="ui-li-aside">Must Try</span>
+            </a></li>
+        	<li><a href="#" class="cars" id="4">
+            	<img src="_assets/img/4.jpg">
+            	<h2>Murg keema</h2>
+                <p>Desription</p>
+                <span style="font-size:12px" class="ui-li-aside">New</span>
+            </a></li>
+        	<li><a href="#" class="cars" id="5">
+            	<img src="_assets/img/5.jpg">
+            	<h2>Panner Special</h2>
+                <p>Desription</p>
+                
+            </a></li>
+        	<li><a href="#" class="cars" id="6">
+            	<img src="_assets/img/6.jpg">
+            	<h2>Veg Platter</h2>
+                <p>Desription</p>
+                <span style="font-size:12px" class="ui-li-aside">New</span>
+            </a></li>
+        	<li><a href="#" class="cars" id="7">
+            	<img src="_assets/img/7.jpg">
+            	<h2>Panner Tikka</h2>
+                <p>Desription</p>
+                
+            </a></li>
+        	<li><a href="#">
+            <img src="_assets/img/8.jpg" class="cars" id="8">
+            	<h2>Meethi Keema</h2>
+                <p>Desription</p>
+                <span style="font-size:12px" class="ui-li-aside">New</span>
+            </a></li>
+        </ul>
+                
+    </div><!-- /content -->
+    
+    <div data-role="footer" data-theme="none" >
+        <h3> 2013 @Dawat Kitchen <br>Designed By IT Genesys
+        </h3>
+    </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- /order -->
+
+<div id="order" data-role="page" data-title="Daawat">
+  
+      <div data-role="header">
+            <h1>Your Order Please</h1>
+            <a href="#" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+      </div><!-- /header -->
+  
+      <div data-role="content">
+   
+            <form>
+     <label for="text-1">Name:</label>
+     <input name="text-1" id="text-1" value="" type="text">
+     <label for="text-2">Address</label>
+     <input  name="text-2" id="text-2" value="" type="text">
+     <label for="text-3">Telephone No.</label>
+     <input  name="text-3" id="text-3" value="" type="text">
+      <label for="select-native-1">Dish:</label>
+    <input  name="text-6" id="text-6" value="" placeholder="You can choose from our menu." type="text">
+    <label for="text-4">Delivery Date</label>
+     <input  name="text-4" id="text-4" value="" type="text">
+     <label for="text-5">Delivery Time</label>
+     <input  name="text-5" id="text-5" value="" type="text">
+    <input value="Submit" type="submit">
+</form>
+           
+
+</div>
+
+</div>
+</body>
+</html>
